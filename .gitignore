@@ -1,0 +1,9 @@
+/docs
+.idea/
+*.iml
+/dbeaver
+/apache-maven-*
+/apache-tomcat-*
+/gradle-*
+/apache-tomcat-*
+node_modules/

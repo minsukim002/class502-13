@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: orange;
+        }
+
+        .box.on{
+            width: 300px;
+            height: 300px;
+        }
+
+    </style>
+    <script>
+        window.addEventListener("DOMcontentLoaded", function{
+            const boxEl = document.querySelector('.box');
+            boxEl.addEventListener('mouseenter', function{
+                console.log('mouseenter');
+
+            })
+        })
+        boxel.addEventListener("mouseleave", function{
+            console.log()
+        })
+    </script>
+    <div class="box on"></div>
+</body>
+</html>
