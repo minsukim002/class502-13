@@ -18,7 +18,7 @@
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <param-value>
-                org.choongang.config.MvcConfig
+                org.choongang.configs.MvcConfig
             </param-value>
         </init-param>
     </servlet>

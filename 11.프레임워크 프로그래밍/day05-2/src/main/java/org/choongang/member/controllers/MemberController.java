@@ -119,7 +119,7 @@ public class MemberController {
 //                .regDt(LocalDateTime.now())
 //                .build();
 
-        //        model.addAttribute("member", member);
+        //       model.addAttribute("member", member);
 
         List<Member> items = IntStream.rangeClosed(1,10)
                 .mapToObj(i -> Member.builder()
@@ -130,6 +130,10 @@ public class MemberController {
                 .toList();
 
         model.addAttribute("items", items);
+
+        model.addAttribute("addCss", new String[] {"member/style", "member/list"});
+        model.addAttribute("addScript", new String[] {"member/common", "member/list"});
+
         return "member/list";
     }
 
